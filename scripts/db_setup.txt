@@ -4,7 +4,3 @@ createuser -d -P --interactive {{project_name}}
 #create database
 createdb -O {{project_name}} -T template0 {{project_name}}
 
-# grant permissions
-GRANT ALL PRIVILEGES
-    ON {{project_name}}
-    TO {{project_name}}
