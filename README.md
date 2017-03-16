@@ -1,5 +1,7 @@
 ========================
+
 {{project_name}}
+
 ========================
 
 {{project_name}} moves to Django (about time!)
