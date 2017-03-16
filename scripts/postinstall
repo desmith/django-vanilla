@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+echo "things to after npm is done installing modules..."
+
+

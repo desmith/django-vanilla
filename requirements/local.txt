@@ -1,0 +1,10 @@
+# includes the _base.txt requirements file
+-r requirements.txt
+coverage
+django-debug-toolbar
+django-shell-plus
+grin
+pyflakes
+pynliner
+python-ptrace
+Werkzeug

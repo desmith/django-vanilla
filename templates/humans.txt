@@ -1,0 +1,17 @@
+# {{project_name}}.org
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Role/Title: Name
+
+# THANKS
+
+  To Whom we owe our gratitude
+
+# TECHNOLOGY COLOPHON
+
+  HTML5, CSS3
+  Bootstrap 4, jQuery, React
+  Nginx, Django, Git
+

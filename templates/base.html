@@ -1,0 +1,60 @@
+{% load static %}
+
+<!doctype html>
+<!--[if IE 8]>               <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<html class="no-js {% block html_class %}{% endblock%}" lang="en" >
+<head>
+  <meta charset="utf-8" />
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  <title>{{project_name}} {% block title %}{% endblock %}</title>
+
+  <link rel="canonical" href="http://{{request.get_host}}{{request.get_full_path}}" />
+  <link rel="author" href="/humans.txt" />
+
+  <meta name="description" content="{% block meta_description %}{% endblock %}" />
+  <meta name="keywords" content="{% block meta_keywords %}{% endblock %}" />
+
+  <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon" />
+
+  {% comment %}
+  {% endcomment %}
+  <link rel="stylesheet" href="{% static 'fa/css/font-awesome.min.css' %}"  />
+  <link rel="stylesheet" href="{% static 'css/{{project_name}}.css' %}" media="screen, projector, print" type="text/css" />
+
+{% block head_extra %}{% endblock %}
+
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+<!-- Header and Nav -->
+{% include "_header.html" %}
+<!-- /Header and Nav -->
+
+
+<div class="outer-content-well">
+  {% block content %}{% endblock %}
+</div>
+
+<div class="container-fluid">
+  <div class="row footer">
+    {% block footer %}{% endblock %}
+    {% include "_footer.html" %}
+  </div>
+</div>
+
+<script src="{% static 'js/vendor.js' %}"></script>
+<script src="{% static 'js/{{project_name}}.js' %}"></script>
+
+<script type="text/javascript">
+  require('bootstrap');
+  require('{{project_name}}');
+</script>
+
+{% block bottom %}{% endblock %}
+
+</body>
+</html>
