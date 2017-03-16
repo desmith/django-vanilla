@@ -1,0 +1,10 @@
+# create user/role
+createuser -d -P --interactive <username>
+
+#create database
+createdb -O <username> -T template0 <database>
+
+# grant permissions
+GRANT ALL PRIVILEGES
+    ON <database>
+    TO <username>
