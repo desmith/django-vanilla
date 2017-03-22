@@ -40,7 +40,7 @@ LOGIN_URL = "/admin/login"
 MEDIA_ROOT = '/data/{{project_name}}/media/'
 MEDIA_URL = '/media/'
 FIXTURE_DIRS = (
-  normpath(join(APPS_DIR, 'fixtures')),
+  normpath(join(ROOT_DIR, 'fixtures')),
 )
 LOCALE_PATHS = (
   normpath(join(ROOT_DIR, 'locale')),
