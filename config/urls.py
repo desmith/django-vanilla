@@ -4,7 +4,8 @@ from django.contrib.auth import views as auth_views
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic import TemplateView
-
+from django.views.decorators.cache import cache_page
+from django.views.static import serve as ServeStatic
 
 admin.autodiscover()
 
@@ -54,13 +55,14 @@ urlpatterns = [
 urlpatterns += [
 ]
 
-
 if settings.DEBUG:
+  import debug_toolbar
   urlpatterns += [
-    url(r'^media/(.+)', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}),
-    url(r'^static/(.+)', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-    url(r'^files/(.+)', 'django.views.static.serve', {'document_root': settings.FILES_ROOT}),
-    url(r'^photos/(.+)', 'django.views.static.serve', {'document_root': os.path.join(settings.MEDIA_ROOT, "photos")}),
-    url(r'^images/(.+)', 'django.views.static.serve', {'document_root': os.path.join(settings.MEDIA_ROOT, "images")}),
-    url(r'^imgvers/(.+)', 'django.views.static.serve', {'document_root': os.path.join(settings.MEDIA_ROOT, "imgvers")}),
+    url(r'^__debug__/', include(debug_toolbar.urls)),
+    url(r'^media/(.+)', ServeStatic, {'document_root': settings.MEDIA_ROOT}),
+    url(r'^static/(.+)', ServeStatic, {'document_root': settings.STATIC_ROOT}),
+    url(r'^files/(.+)', ServeStatic, {'document_root': settings.FILES_ROOT}),
+    url(r'^photos/(.+)', ServeStatic, {'document_root': os.path.join(settings.MEDIA_ROOT, "photos")}),
+    url(r'^images/(.+)', ServeStatic, {'document_root': os.path.join(settings.MEDIA_ROOT, "images")}),
+    url(r'^imgvers/(.+)', ServeStatic, {'document_root': os.path.join(settings.MEDIA_ROOT, "imgvers")}),
   ]
