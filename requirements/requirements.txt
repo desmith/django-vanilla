@@ -1,5 +1,5 @@
 Django
-
+django-extensions
 django-staticfiles
 django-storages
 psycopg2
