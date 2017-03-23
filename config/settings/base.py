@@ -63,11 +63,9 @@ AUTHENTICATION_BACKENDS = (
 ########## END AUTHENTICATION BACKENDS
 
 ########## STATIC FILE CONFIGURATION
+ADMIN_MEDIA_PREFIX = STATIC_URL
 #ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/"
-
-### Admin
 THUMBNAIL_FORMAT = 'png'
-
 STATICFILES_FINDERS = [
   'django.contrib.staticfiles.finders.FileSystemFinder',
   'django.contrib.staticfiles.finders.AppDirectoriesFinder',
