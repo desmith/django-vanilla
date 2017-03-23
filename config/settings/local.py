@@ -5,7 +5,7 @@ from ConfigParser import RawConfigParser
 
 
 config = RawConfigParser()
-config_file = '/etc/environments/local/{{project_name}}.org.ini'
+config_file = '/etc/environments/local/{{project_name}}.ini'
 config.read(config_file)
 
 DEBUG = True

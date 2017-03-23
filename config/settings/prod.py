@@ -5,7 +5,7 @@ from .logging import *
 from ConfigParser import RawConfigParser
 
 config = RawConfigParser()
-config_file = '/etc/environments/production/{{project_name}}.org.ini'
+config_file = '/etc/environments/production/{{project_name}}.ini'
 config.read(config_file)
 
 LOGGING['handlers']['logfile']['filename'] = '/var/log/django/{{project_name}}.log'
