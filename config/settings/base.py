@@ -76,7 +76,7 @@ STATICFILES_DIRS = [
     STATIC_SRC,
 ]
 
-STATICFILES_STORAGE = django.contrib.staticfiles.storage.StaticFilesStorage
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 #STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.CachedStaticFilesStorage'
 #STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 ########## END STATIC FILE CONFIGURATION
