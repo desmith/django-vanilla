@@ -4,3 +4,4 @@ django-staticfiles
 django-storages
 psycopg2
 
+uwsgi
