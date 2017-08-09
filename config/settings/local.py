@@ -102,6 +102,7 @@ INSTALLED_APPS += (
 ALLOWED_HOSTS = (
   PROJET_DOMAIN_NAME,
   u'localhost',
+  u'{{project_name}}.dev',
   '127.0.0.1',
 )
 
