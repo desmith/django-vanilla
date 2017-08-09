@@ -1,0 +1,10 @@
+openssl req \
+  -new \
+  -newkey rsa:2048 \
+  -sha1 \
+  -days 3650 \
+  -nodes \
+  -x509 \
+  -keyout {{project_name}}.ssl.key \
+  -out {{project_name}}.ssl.crt \
+  -config openssl.cnf
