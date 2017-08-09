@@ -1,4 +1,4 @@
-from .base import ROOT_DIR
+from ._paths import ROOT_DIR
 
 LOGGING = {
   'version': 1,
@@ -35,7 +35,7 @@ LOGGING = {
     'logfile': {
       'level': 'DEBUG',
       'class': 'logging.handlers.RotatingFileHandler',
-      'filename': ROOT_DIR + "/django.log",
+      'filename': ROOT_DIR + "/logs/django.log",
       'maxBytes': 150000,
       'backupCount': 6,
       'formatter': 'standard',
@@ -62,11 +62,15 @@ LOGGING = {
       'handlers': ['console'],
       'propagate': False,
     },
-    'content': {
-      'handlers': ['console', 'logfile'],
+    'stdout': {
+      'handlers': ['logfile'],
       'level': 'DEBUG',
     },
-    'adzone': {
+    'log': {
+      'handlers': ['logfile'],
+      'level': 'DEBUG',
+    },
+    'dual': {
       'handlers': ['console', 'logfile'],
       'level': 'DEBUG',
     },
