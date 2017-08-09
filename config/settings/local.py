@@ -96,7 +96,7 @@ CSRF_COOKIE_DOMAIN = SESSION_COOKIE_DOMAIN = None
 INSTALLED_APPS += (
     'debug_toolbar',
     #'memcache_toolbar',
-    'haystack_panel',
+    #'haystack_panel',
 )
 
 ALLOWED_HOSTS = (
@@ -149,5 +149,5 @@ HAYSTACK_CONNECTIONS['default']['URL'] = config.get('search', 'URL')
 
 
 MIDDLEWARE_CLASSES += (
-  'services.middleware.ResponseLoggingMiddleware',
+  #'services.middleware.ResponseLoggingMiddleware',
 )

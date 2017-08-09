@@ -29,9 +29,9 @@ THIRD_PARTY_APPS = (
 #  'adv_cache_tag',
 #  'autoslug',
   'django_extensions',
-  'haystack',
-  'tagulous',
-  'tastypie',
+#  'haystack',
+#  'tagulous',
+#  'tastypie',
 
 )
 

@@ -1,7 +1,10 @@
 Django
 django-extensions
+django-haystack==2.6.0
 django-staticfiles
 django-storages
+django-tagulous[i18n]
+django-tastypie
 psycopg2
 
 uwsgi
