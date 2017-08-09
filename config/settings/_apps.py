@@ -13,9 +13,9 @@ DJANGO_APPS = (
 )
 
 DJANGO_PRE_ADMIN = (
-  'grappelli.dashboard',
-  'grappelli',
-  'filebrowser',
+#  'grappelli.dashboard',
+#  'grappelli',
+#  'filebrowser',
 
 )
 
@@ -26,8 +26,8 @@ DJANGO_ADMIN = (
 )
 
 THIRD_PARTY_APPS = (
-  'adv_cache_tag',
-  'autoslug',
+#  'adv_cache_tag',
+#  'autoslug',
   'django_extensions',
   'haystack',
   'tagulous',
