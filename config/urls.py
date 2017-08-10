@@ -61,7 +61,6 @@ if settings.DEBUG:
     url(r'^__debug__/', include(debug_toolbar.urls)),
     url(r'^media/(.+)', ServeStatic, {'document_root': settings.MEDIA_ROOT}),
     url(r'^static/(.+)', ServeStatic, {'document_root': settings.STATIC_ROOT}),
-    url(r'^photos/(.+)', ServeStatic, {'document_root': os.path.join(settings.MEDIA_ROOT, "photos")}),
     url(r'^images/(.+)', ServeStatic, {'document_root': os.path.join(settings.MEDIA_ROOT, "images")}),
     url(r'^imgvers/(.+)', ServeStatic, {'document_root': os.path.join(settings.MEDIA_ROOT, "imgvers")}),
   ]
