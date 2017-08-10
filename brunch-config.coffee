@@ -32,7 +32,7 @@ exports.config =
   files:
     javascripts:
       joinTo:
-        'js/inews.js': /^react/
+        'js/{{project_name}}.js': /^react/
         'js/vendor.js': /node_modules/
       order:
         before: [
