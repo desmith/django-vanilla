@@ -7,6 +7,8 @@ from django.views.generic import TemplateView
 from django.views.decorators.cache import cache_page
 from django.views.static import serve as ServeStatic
 
+from content.views import Homepage
+
 admin.autodiscover()
 
 urlpatterns = [
@@ -53,6 +55,11 @@ urlpatterns = [
 ]
 
 urlpatterns += [
+  url(
+    regex=r'^$',
+    view=Homepage.as_view(),
+    name='homepage_view',
+  ),
 ]
 
 if settings.DEBUG:
