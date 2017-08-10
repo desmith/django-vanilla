@@ -1,0 +1,103 @@
+
+// The default font-size is set to 100% of the browser style sheet (usually 16px)
+// for compatibility with browser-based text zoom or user-set defaults.
+$base-font-size = 100% !default
+
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be a different size and not have it effect grid size too,
+// set the value of $em-base to $base-font-size ($em-base: $base-font-size;)
+$em-base = 16px !default
+
+$default-float = left
+
+// Font-smoothing
+$font-smoothing = antialiased
+
+$reveal-overlay-bg = rgba(255, 255, 255, 0.20)
+
+$reveal-modal-bg = rgba(0, 0, 0, .8)
+$reveal-position-top = emCalc(5px)
+$reveal-default-width = 50%
+
+$reveal-border-style = solid
+$reveal-border-width = 1px
+$reveal-border-color = #000
+
+$font-script = 'Norican', cursive
+$font-text = 'PT Sans', sans-serif
+$font-text-narrow = 'PT Sans Narrow', sans-serif
+$font-narrow = 'Economica', sans-serif
+$font-weight-text = 400
+$font-weight-head = 700
+
+/* Height and margin */
+$topbar-height = 10px
+$topbar-margin-bottom = emCalc(10px)
+
+$topbar-bg = rgb(0, 51, 102)
+$topbar-bg-tint = rgba(0, 51, 102, 0.5)
+
+$topbar-text = #fff
+$topbar-hover-text = #fff
+$topbar-hover-bg = #889dbe
+$topbar-active-bg = #8c0028
+$topbar-active-text = #fff
+
+$topbar-search-bg = #4a6c95
+
+body
+  font-family $font-text
+  font-weight $font-weight-text
+
+h1, h2, h3
+  font-family $font-text
+  font-weight $font-weight-head
+  color $topbar-active-bg
+
+h1
+  font-size 1.8em
+h2
+  font-size 1.5em
+h3
+  font-size 1.2em
+
+li
+  list-style: none
+a
+  text-decoration none
+
+@import '_homepage'
+@import '_header'
+@import '_navbar'
+@import '_sidebars'
+@import '_sections'
+@import '_pagination'
+@import '_search-results'
+@import '_footer'
+@import '_forms'
+
+
+.outer-content-well
+  margin 0 30px
+
+@media (min-width: 991px)
+  .outer-content-well
+    margin 0 175px
+  .modal-lg
+    max-width: 1200px
+
+.page
+  margin-top 15px
+
+#thanks
+  height 501px
+
+.more
+  right 0
+  width 90%
+  text-align right
+  font-family $font-text-narrow
+  font-size: .9em
+  text-transform: uppercase
+  a
+    color $topbar-bg

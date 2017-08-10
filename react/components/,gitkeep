@@ -1,0 +1,18 @@
+import CategorizeApp from 'CategorizeApp';
+
+//const {whyDidYouUpdate} = require('why-did-you-update');
+//whyDidYouUpdate(React);
+
+let rootNode = document.getElementById('categorize');
+ReactDOM.render(<CategorizeApp />, rootNode );
+
+console.log('1-Categorize initialized.');
+
+/***
+import Perf from 'react-addons-perf';
+Perf.start()
+Perf.stop()
+let measurements = Perf.getLastMeasurements()
+Perf.printInclusive(measurements)
+Perf.printWasted(measurements)
+***/
