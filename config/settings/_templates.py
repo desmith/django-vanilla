@@ -24,8 +24,7 @@ TEMPLATES = [
         'django.template.context_processors.tz',
         'django.contrib.messages.context_processors.messages',
         # Your stuff: custom template context processors go here
-        'adzone.context_processors.get_source_ip',
-        'content.context_processors.api_tokens',
+
        ],
       'loaders': [
           ('django.template.loaders.cached.Loader', [
