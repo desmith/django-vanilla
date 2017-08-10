@@ -35,6 +35,8 @@
     "node": ">=6.4.0"
   },
   "dependencies": {
+    "autoprefixer": "^7.0.1",
+    "bootstrap": "^4.0.0-alpha.6",
     "jquery": "^3.1.1",
     "jquery-ui": "^1.12.1",
     "jquery.mousewheel": "^3.1.9",
@@ -51,7 +53,6 @@
   },
   "devDependencies": {
     "after-brunch": "0.0.5",
-    "autoprefixer": "^6.7.6",
     "babel-brunch": "^6.1.1",
     "babel-eslint": "^7.1.1",
     "babel-preset-env": "^1.2.0",
