@@ -7,12 +7,12 @@
   "main": "static/js/{{project_name}}.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/{{user}}/{{project_name}}.git"
+    "url": "git+ssh://git@gitlab.com/{{user}}{{project_name}}.git"
   },
   "bugs": {
-    "url": "https://gitlab.com/{{user}}/{{project_name}}/issues"
+    "url": "https://gitlab.com/{{user}}{{project_name}}/issues"
   },
-  "homepage": "https://gitlab.com/{{user}}/{{project_name}}#README",
+  "homepage": "https://gitlab.com/{{user}}{{project_name}}#README",
   "scripts": {
     "build": "brunch build",
     "prod": "brunch build --production",
