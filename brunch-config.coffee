@@ -1,4 +1,7 @@
 exports.config =
+conventions:
+  assets: /assets\/.*/
+
   npm:
     globals:
       $: 'jquery'
