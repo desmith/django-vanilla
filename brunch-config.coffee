@@ -44,12 +44,12 @@ exports.config =
         'css/vendor.css': /^react\/scss/
         'css/{{project_name}}.css': /^react\/styles/
       order:
-      before: [
-        '{{project_name}}.scss'
-      ]
-      after: [
-        '{{project_name}}.styl'
-      ]
+        before: [
+          '{{project_name}}.scss'
+        ]
+        after: [
+          '{{project_name}}.styl'
+        ]
 
   overrides:
     production:
