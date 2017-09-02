@@ -6,7 +6,7 @@ exports.config =
       _: 'lodash'
       Tether: 'tether'
       Bootstrap: 'bootstrap'
-      #React: 'react'
+      React: 'react'
       #ReactDOM: 'react-dom'
       #Router: 'react-router'
 
@@ -20,14 +20,11 @@ exports.config =
     addSourceURLs: true
     nameCleaner: (path) ->
       path
-        #.replace(/^react\/components\//, '')
         .replace(/^react\//, '')
         .replace(/^components\//, '')
         .replace(/^javascripts\//, '')
         .replace(/\.jsx/, '')
         .replace(/\.js/, '')
-#    autoRequire:
-#      'js/inews.js': ['inews']
 
   files:
     javascripts:
@@ -44,13 +41,15 @@ exports.config =
 
     stylesheets:
       joinTo:
-        'css/{{project_name}}.css': /^react/
+        'css/vendor.css': /^react\/scss/
+        'css/{{project_name}}.css': /^react\/styles/
       order:
-        before: [
-        ]
-        after: [
-          'inews.styl'
-        ]
+      before: [
+        '{{project_name}}.scss'
+      ]
+      after: [
+        '{{project_name}}.styl'
+      ]
 
   overrides:
     production:
@@ -69,7 +68,7 @@ exports.config =
 
     babel:
       babelrc: false
-      presets: ['env', 'react', 'es2015', 'es2016' ]
+      presets: ['env', 'react', ]
       ignore: [
         /(node_modules|vendor)/
       ]
@@ -100,8 +99,8 @@ exports.config =
       mode: 'native'
       sourceMapEmbed: true
       debug: 'comments'
+      allowCache: true
       options:
         includePaths: [
           'node_modules/bootstrap/scss',
-          'node_modules/motion-ui/src'
         ]
