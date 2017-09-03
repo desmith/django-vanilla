@@ -16,7 +16,7 @@ conventions:
   sourceMaps: true
   paths:
     # doc: https://github.com/brunch/brunch/blob/master/docs/config.md#paths
-    watched: ['react']
+    watched: ['react', 'assets', ]
     public: 'static'
 
   modules:

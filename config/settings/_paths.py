@@ -15,7 +15,7 @@ STATIC_URL = '/static/'
 #FILES_URL = '/files/'
 
 ROOT_DIR = realpath(dirname(__name__))
-ASSETS_ROOT = normpath(join(ROOT_DIR, 'assets'))
+#ASSETS_ROOT = normpath(join(ROOT_DIR, 'assets'))
 CONF_DIR = dirname(realpath(__file__))
 ROOT_URLCONF = 'config.urls'
 STATIC_SRC = join(ROOT_DIR, 'static')
@@ -42,7 +42,6 @@ IGNORABLE_404_URLS = (
 )
 
 STATICFILES_DIRS = [
-  ASSETS_ROOT,
   STATIC_SRC,
 ]
 
