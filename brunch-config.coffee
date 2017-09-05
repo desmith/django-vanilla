@@ -33,6 +33,7 @@ exports.config =
         'js/vendor.js': /node_modules/
       order:
         before: [
+          'node_modules/popper.js/dist/umd/popper.js'
           'node_modules/jquery/dist/jquery.js'
         ]
         after: [
