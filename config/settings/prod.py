@@ -58,11 +58,10 @@ TEMPLATE_DEBUG = DEBUG
 PROJET_DOMAIN_NAME = '{{project_name}}'
 
 LOGGING['handlers']['logfile']['filename'] = ''.join(['/var/log/django/', PROJET_DOMAIN_NAME, '.log'])
-SESSION_COOKIE_DOMAIN = '.domain.org'
+SESSION_COOKIE_DOMAIN = '.{{project_name}}.org'
 CSRF_COOKIE_DOMAIN = SESSION_COOKIE_DOMAIN
 
 ALLOWED_HOSTS = [
-    'admin.{{project_name}}.org',
     '.{{project_name}}.org',
 ]
 

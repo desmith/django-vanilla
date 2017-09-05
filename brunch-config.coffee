@@ -1,6 +1,6 @@
 exports.config =
-conventions:
-  assets: /assets\/.*/
+  conventions:
+    assets: /assets\/.*/
 
   npm:
     globals:
@@ -9,9 +9,6 @@ conventions:
       _: 'lodash'
       Tether: 'tether'
       Bootstrap: 'bootstrap'
-      React: 'react'
-      #ReactDOM: 'react-dom'
-      #Router: 'react-router'
 
   sourceMaps: true
   paths:
@@ -66,12 +63,18 @@ conventions:
 #      'django-admin collectstatic --no-input'
 #    ]
 
+    flowtype:
+      warnOnly:  false,
+      method:    'status',
+      statusDelay: 250
+
     autoReload:
       enabled: true
 
     babel:
       babelrc: false
-      presets: ['env', 'react', ]
+      plugins: ['transform-flow-strip-types']
+      presets: ['env', 'react', 'flow', ]
       ignore: [
         /(node_modules|vendor)/
       ]
@@ -91,9 +94,9 @@ conventions:
       ]
 
     presets:
-        env:
-          targets:
-            browsers: ["last 2 versions", "safari >= 7"]
+      env:
+        targets:
+          browsers: ["last 2 versions", "safari >= 7"]
 
     react:
       autoIncludeCommentBlock: yes

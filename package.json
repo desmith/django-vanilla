@@ -46,10 +46,12 @@
     "node-sass": "^4.5.3",
     "popper.js": "^1.12.5",
     "postcss": "^6.0.9",
+    "prop-types": "^15.5.10",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-fontawesome": "^1.5.0",
     "react-router-dom": "^4.2.0",
+    "react-router-redux": "^4.0.8",
     "react-search-input": "^0.11.2",
     "tether": "^1.4.0",
     "what-input": "^4.1.1"
