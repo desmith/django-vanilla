@@ -5,10 +5,11 @@ exports.config =
   npm:
     globals:
       $: 'jquery'
-      jQuery: 'jquery'
       _: 'lodash'
-      Tether: 'tether'
+      jQuery: 'jquery'
       Bootstrap: 'bootstrap'
+      Tether: 'tether'
+      React: 'react'
 
   sourceMaps: true
   paths:
