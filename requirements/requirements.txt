@@ -1,6 +1,7 @@
 Django
 django-extensions
 django-haystack==2.6.0
+django-model-utils
 django-redis
 django-staticfiles
 django-storages
