@@ -46,4 +46,4 @@ Acknowledgements
     - And of course many thanks to my Guru Maharaja who has inspired me to bring this site to life!
     - and all the contributors_
 
-.. _contributors: https://gitlab.com/{{user}}/{{project_name}}/blob/master/CONTRIBUTORS.txt
+.. _contributors: https://gitlab.com/{{user}}{{project_name}}/blob/master/CONTRIBUTORS.txt

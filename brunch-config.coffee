@@ -1,17 +1,15 @@
 exports.config =
-conventions:
-  assets: /assets\/.*/
+  conventions:
+    assets: /assets\/.*/
 
   npm:
     globals:
       $: 'jquery'
-      jQuery: 'jquery'
       _: 'lodash'
-      Tether: 'tether'
+      jQuery: 'jquery'
       Bootstrap: 'bootstrap'
+      Tether: 'tether'
       React: 'react'
-      #ReactDOM: 'react-dom'
-      #Router: 'react-router'
 
   sourceMaps: true
   paths:
@@ -36,6 +34,7 @@ conventions:
         'js/vendor.js': /node_modules/
       order:
         before: [
+          'node_modules/popper.js/dist/umd/popper.js'
           'node_modules/jquery/dist/jquery.js'
         ]
         after: [
@@ -66,12 +65,18 @@ conventions:
 #      'django-admin collectstatic --no-input'
 #    ]
 
+    flowtype:
+      warnOnly:  false,
+      method:    'status',
+      statusDelay: 250
+
     autoReload:
       enabled: true
 
     babel:
       babelrc: false
-      presets: ['env', 'react', ]
+      plugins: ['transform-flow-strip-types']
+      presets: ['env', 'react', 'flow', ]
       ignore: [
         /(node_modules|vendor)/
       ]
@@ -91,9 +96,9 @@ conventions:
       ]
 
     presets:
-        env:
-          targets:
-            browsers: ["last 2 versions", "safari >= 7"]
+      env:
+        targets:
+          browsers: ["last 2 versions", "safari >= 7"]
 
     react:
       autoIncludeCommentBlock: yes

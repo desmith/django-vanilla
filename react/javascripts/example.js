@@ -4,7 +4,7 @@ import App from 'App';
 let rootNode = document.getElementById('app_node');
 ReactDOM.render(
   <App />,
-  rootnode
+  rootNode
 );
 
 
