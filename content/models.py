@@ -19,8 +19,14 @@ from django.core.cache import cache
 from django.core.exceptions import ValidationError
 from django.core.urlresolvers import reverse
 
+from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 from django.template.defaultfilters import slugify
+
+from model_utils import Choices
+from model_utils.fields import StatusField
+from model_utils.models import TimeStampedModel
+
 
 def shellquote(s):
   return s.replace(" ", "\ ")
@@ -101,4 +107,60 @@ def _slug_strip(value, separator='-'):
 
 
 # Create your models here.
+class Page(TimeStampedModel, models.Model):
+  """
+  A simple page model.
+  """
 
+  slug = models.SlugField(
+    max_length=255
+  )
+
+  publish_date = models.DateTimeField(
+    blank=True,
+    null=True,
+    default=None
+  )
+
+  STATUS = Choices(
+    'draft',
+    'published'
+  )
+
+  status = StatusField(
+    db_index=True
+  )
+
+  title = models.CharField(
+    max_length=255,
+    blank=False
+  )
+
+  content = models.TextField(
+    blank=True,
+    null=True
+  )
+
+  class Meta:
+    ordering = ("-publish_date",)
+    get_latest_by = ("publish_date")
+
+  def __unicode__(self):
+    return '%s, %s' % (self.slug, self.title)
+
+  def save(self, *args, **kwargs):
+
+    self.title = self.title.strip()
+    unique_slugify(self, self.title)
+
+    if not self.publish_date:
+      self.publish_date = timezone.now()
+
+    cache.clear()
+    super(Page, self).save(*args, **kwargs)
+
+  def get_absolute_url(self):
+    if self.status == 'draft':
+      return reverse('page_slug_preview', kwargs={'slug': self.slug, 'page_id': self.id})
+    else:
+      return reverse('page_slug_view', kwargs={'slug': self.slug, 'page_id': self.id})
