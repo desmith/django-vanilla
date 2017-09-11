@@ -14,23 +14,28 @@ exports.config =
   sourceMaps: true
   paths:
     # doc: https://github.com/brunch/brunch/blob/master/docs/config.md#paths
-    watched: ['react', 'assets', ]
+    watched: [
+      'components'
+      'javascript'
+      'scss'
+      'styles'
+      'assets'
+    ]
     public: 'static'
 
   modules:
     addSourceURLs: true
     nameCleaner: (path) ->
       path
-        .replace(/^react\//, '')
         .replace(/^components\//, '')
-        .replace(/^javascripts\//, '')
+        .replace(/^javascript\//, '')
         .replace(/\.jsx/, '')
         .replace(/\.js/, '')
 
   files:
     javascripts:
       joinTo:
-        'js/{{project_name}}.js': /^react/
+        'js/{{project_name}}.js': /^javascript|^components/
         'js/vendor.js': /node_modules/
       order:
         before: [
@@ -43,8 +48,8 @@ exports.config =
 
     stylesheets:
       joinTo:
-        'css/vendor.css': /^react\/scss/
-        'css/{{project_name}}.css': /^react\/styles/
+        'css/vendor.css': /^scss/
+        'css/{{project_name}}.css': /^styles/
       order:
         before: [
           '{{project_name}}.scss'

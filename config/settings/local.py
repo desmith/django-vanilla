@@ -86,7 +86,7 @@ FILEBROWSER_URL_TINYMCE = join(STATIC_URL, 'grappelli/tinymce/jscripts/tiny_mce/
 FILEBROWSER_PATH_TINYMCE = join(STATIC_ROOT, 'grappelli/tinymce/jscripts/tiny_mce/')
 ### end Filebrowser
 
-GRAPPELLI_ADMIN_TITLE = 'ISKCON News: The News Agency of the International Society for Krishna Consciousness'
+GRAPPELLI_ADMIN_TITLE = '{{project_name}}'
 GRAPPELLI_INDEX_DASHBOARD = 'dashboard.CustomIndexDashboard'
 #GRAPPELLI_ADMIN_URL =
 
