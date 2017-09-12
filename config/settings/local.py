@@ -69,7 +69,7 @@ def show_toolbar(request):
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 DEBUG_TOOLBAR_CONFIG['SHOW_TOOLBAR_CALLBACK'] = show_toolbar
 
-PROJET_DOMAIN_NAME = '{{project_name}}.localhost'
+PROJET_DOMAIN_NAME = '{{project_name}}.dev'
 
 
 ### TinyMCE
@@ -102,8 +102,6 @@ INSTALLED_APPS += (
 ALLOWED_HOSTS = (
   PROJET_DOMAIN_NAME,
   u'localhost',
-  u'{{project_name}}.localhost',
-  u'{{project_name}}.dev',
   '127.0.0.1',
 )
 
