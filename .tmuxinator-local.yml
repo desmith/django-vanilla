@@ -1,0 +1,46 @@
+# ~/.tmuxinator/{{project_name}}-local.yml
+
+name: {{project_name}}-local
+root: /opt/code/{{project_name}}
+
+# Optional tmux socket
+# socket_name: foo
+
+# Runs before everything. Use it to start daemons etc.
+# pre: sudo /etc/rc.d/mysqld start
+pre:
+#  - brew services start redis
+#  - brew services start elasticsearch
+
+#pre: pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start
+
+# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
+# pre_window: rbenv shell 2.0.0-p247
+pre_window: workon {{project_name}}
+
+# Pass command line options to tmux. Useful for specifying a different tmux.conf.
+# tmux_options: -f ~/.tmux.mac.conf
+
+# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
+# tmux_command: byobu
+
+# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
+startup_window: 1
+
+# Controls whether the tmux session should be attached to automatically. Defaults to true.
+# attach: false
+
+# Runs after everything. Use it to attach to tmux with custom options etc.
+# post: tmux -CC attach -t iskconnews
+
+#layout: 91b2,197x50,0,0[197x25,0,0{98x25,0,0,0,98x25,99,0,3},197x24,0,26{56x24,0,26,1,56x24,57,26,5,83x24,114,26,4}]
+
+windows:
+  - {{project_name}}:
+      layout: 6a9c,159x31,0,0[159x18,0,0{79x18,0,0,0,79x18,80,0,1},159x12,0,19{43x12,0,19,2,43x12,44,19,3,71x12,88,19,4}]
+      panes:
+        - uwsgi --ini config/uwsgi.ini
+        - tailf logs/django.log
+        -
+        - npmw
+        -
