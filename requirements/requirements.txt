@@ -9,6 +9,7 @@ django-staticfiles
 django-storages
 django-tagulous[i18n]
 
+djangorestframework
 #Pillow
 psycopg2
 uwsgi

@@ -28,10 +28,12 @@ DJANGO_ADMIN = (
 THIRD_PARTY_APPS = (
 #  'adv_cache_tag',
 #  'autoslug',
+  'crispy_forms',
   'django_extensions',
 #  'haystack',
+  'rest_framework',
+  'rest_framework.authtoken',
 #  'tagulous',
-#  'tastypie',
 
 )
 
