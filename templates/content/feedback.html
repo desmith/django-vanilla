@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block body_class %}content {{page.status}}{% endblock %}
+{% block content %}
+
+<div class="container-fluid">
+  <div  class="row justify-content-center">
+    <div class="col-8 text-left">
+
+    <h1>Contact Us</h1>
+
+     {% crispy form %}
+
+      </div><!-- /.col-8 -->
+  </div><!-- ./row justify-content-center -->
+</div><!-- /.container -->
+
+{% endblock content %}
+
+</body>
+</html>
