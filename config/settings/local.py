@@ -60,6 +60,7 @@ DEBUG = True
 DEBUG_TOOLBAR = DEBUG
 FILEBROWSER_DEBUG = False
 TASTYPIE_FULL_DEBUG = DEBUG
+CRISPY_FAIL_SILENTLY = not DEBUG
 
 def show_toolbar(request):
   if DEBUG and DEBUG_TOOLBAR:
@@ -69,6 +70,7 @@ def show_toolbar(request):
 TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 DEBUG_TOOLBAR_CONFIG['SHOW_TOOLBAR_CALLBACK'] = show_toolbar
 
+GOOGLE_RECAPTCHA_SECRET_KEY = config.get('django', 'GOOGLE_RECAPTCHA_SECRET_KEY')
 PROJET_DOMAIN_NAME = '{{project_name}}.dev'
 
 

@@ -60,6 +60,7 @@ PROJET_DOMAIN_NAME = '{{project_name}}'
 LOGGING['handlers']['logfile']['filename'] = ''.join(['/var/log/django/', PROJET_DOMAIN_NAME, '.log'])
 SESSION_COOKIE_DOMAIN = '.{{project_name}}.org'
 CSRF_COOKIE_DOMAIN = SESSION_COOKIE_DOMAIN
+GOOGLE_RECAPTCHA_SECRET_KEY = config.get('django', 'GOOGLE_RECAPTCHA_SECRET_KEY')
 
 ALLOWED_HOSTS = [
     '.{{project_name}}.org',
