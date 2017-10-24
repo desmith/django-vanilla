@@ -1,3 +1,4 @@
+from django.core.exceptions import ObjectDoesNotExist
 
 from django.conf import settings
 from django.core.cache import cache
