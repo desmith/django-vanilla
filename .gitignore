@@ -1,6 +1,9 @@
 # virtual environments
 .env*
 *.pid
+config/wsgi.ini
+*.ssl.crt
+*.ssl.key
 
 ### OSX ###
 .DS_Store
