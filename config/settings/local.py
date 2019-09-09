@@ -4,7 +4,7 @@ from .__base import *
 from ._paths import *
 from ._apps import INSTALLED_APPS
 from ._middleware import (
-  MIDDLEWARE_CLASSES,
+  MIDDLEWARE,
   SERIALIZATION_MODULES,
   THUMBNAIL_FORMAT,
   STATICFILES_FINDERS,
@@ -46,7 +46,7 @@ from ._debug_toolbar import (
   DEBUG_TOOLBAR_PATCH_SETTINGS,
   DEBUG_TOOLBAR_CONFIG,
   DEBUG_TOOLBAR_PANELS,
-  MIDDLEWARE_CLASSES,
+  MIDDLEWARE,
 )
 
 from configparser import RawConfigParser
@@ -150,6 +150,6 @@ HAYSTACK_CONNECTIONS['default']['URL'] = config.get('search', 'URL')
 #  run the 'diffsettings' management command.
 
 
-MIDDLEWARE_CLASSES += (
+MIDDLEWARE += (
   #'services.middleware.ResponseLoggingMiddleware',
 )

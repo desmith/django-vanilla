@@ -8,4 +8,4 @@ SECRET_KEY = ''.join([random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz01
 #secret.write(SECRET_KEY)
 #secret.close()
 
-print "SECRET_KEY = '%s'" % SECRET_KEY
+print("SECRET_KEY = ", SECRET_KEY)

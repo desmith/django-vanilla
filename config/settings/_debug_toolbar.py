@@ -1,4 +1,4 @@
-from ._middleware import MIDDLEWARE_CLASSES
+from ._middleware import MIDDLEWARE
 
 DEBUG_TOOLBAR_CONFIG = {
   'INTERCEPT_REDIRECTS': False,
@@ -25,6 +25,6 @@ DEBUG_TOOLBAR_PANELS = (
   'debug_toolbar.panels.redirects.RedirectsPanel',
 )
 
-MIDDLEWARE_CLASSES += (
+MIDDLEWARE += (
   'debug_toolbar.middleware.DebugToolbarMiddleware',
 )

@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 
 from os.path import basename, isfile, join, normpath
 import re
@@ -17,7 +16,7 @@ from django.db.models.signals import post_save
 from django.core import management
 from django.core.cache import cache
 from django.core.exceptions import ValidationError
-from django.core.urlresolvers import reverse
+from django.urls import reverse
 
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
