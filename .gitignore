@@ -1,7 +1,7 @@
 # virtual environments
 .env*
 *.pid
-config/wsgi.ini
+config/uwsgi.ini
 *.ssl.crt
 *.ssl.key
 
