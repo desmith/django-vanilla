@@ -71,7 +71,7 @@ TEST_RUNNER = 'django.test.runner.DiscoverRunner'
 DEBUG_TOOLBAR_CONFIG['SHOW_TOOLBAR_CALLBACK'] = show_toolbar
 
 GOOGLE_RECAPTCHA_SECRET_KEY = config.get('django', 'GOOGLE_RECAPTCHA_SECRET_KEY')
-PROJET_DOMAIN_NAME = '{{project_name}}.dev'
+PROJET_DOMAIN_NAME = '{{project_name}}.local'
 
 
 ### TinyMCE
