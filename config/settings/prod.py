@@ -10,7 +10,7 @@ from ._paths import *
 from ._apps import INSTALLED_APPS
 from ._templates import TEMPLATES
 from ._middleware import (
-  MIDDLEWARE_CLASSES,
+  MIDDLEWARE,
   SERIALIZATION_MODULES,
   THUMBNAIL_FORMAT,
   STATICFILES_FINDERS,
@@ -50,7 +50,7 @@ from ConfigParser import RawConfigParser
 
 
 config = RawConfigParser()
-config_file = '/etc/environments/production/{{project_name}}.ini'
+config_file = '/etc/uwsgi/apps-enabled/{{project_name}}.org.ini'
 config.read(config_file)
 
 TEMPLATE_DEBUG = DEBUG
@@ -58,6 +58,7 @@ TEMPLATE_DEBUG = DEBUG
 PROJET_DOMAIN_NAME = '{{project_name}}'
 
 LOGGING['handlers']['logfile']['filename'] = ''.join(['/var/log/django/', PROJET_DOMAIN_NAME, '.log'])
+SECRET_KEY = config.get('django', 'SECRET_KEY')
 SESSION_COOKIE_DOMAIN = '.{{project_name}}.org'
 CSRF_COOKIE_DOMAIN = SESSION_COOKIE_DOMAIN
 GOOGLE_RECAPTCHA_SECRET_KEY = config.get('django', 'GOOGLE_RECAPTCHA_SECRET_KEY')

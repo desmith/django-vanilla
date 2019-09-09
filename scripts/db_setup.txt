@@ -4,3 +4,11 @@ createuser -d -P --interactive {{project_name}}
 #create database
 createdb -O {{project_name}} -T template0 {{project_name}}
 
+# log in as root user to create new databases
+#psql -U icgroot -h icgdb-pgsql.couyhmpksokh.us-east-1.rds.amazonaws.com
+
+CREATE ROLE {{project_name}} WITH LOGIN PASSWORD 'password';
+CREATE DATABASE {{project_name}};
+GRANT ALL PRIVILEGES ON DATABASE {{project_name}} TO {{project_name}};
+
+
