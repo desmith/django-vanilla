@@ -49,7 +49,7 @@ from ._debug_toolbar import (
   MIDDLEWARE_CLASSES,
 )
 
-from ConfigParser import RawConfigParser
+from configparser import RawConfigParser
 
 
 config = RawConfigParser()
