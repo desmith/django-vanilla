@@ -28,6 +28,7 @@ DJANGO_ADMIN = (
 THIRD_PARTY_APPS = (
 #  'adv_cache_tag',
 #  'autoslug',
+  'captcha',
   'crispy_forms',
   'django_extensions',
 #  'haystack',

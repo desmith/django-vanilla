@@ -5,6 +5,7 @@ django-extensions
 #django-grappelli
 django-haystack==2.6.0
 django-model-utils
+django-recaptcha
 django-redis
 django-staticfiles
 django-storages
