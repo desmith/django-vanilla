@@ -1,0 +1,1 @@
+mkdir -p /data/{{project_name}}/static/ /data/{{project_name}}/media
