@@ -1,37 +1,40 @@
 from django.conf import settings
-from django.conf.urls import include, url
-from django.views.generic import TemplateView
+from django.urls import path, re_path
 from django.views.decorators.cache import cache_page
 
-from content.views import Homepage, PageDetail, Thanks
-from content.models import Page
+from content.views import Homepage, Listings, PageDetail, Thanks
 
 
 content_patterns = [
 
-  url(
-    regex=r'^$',
-    view=Homepage.as_view(),
-    name='homepage_view'
-  ),
+  path('', Homepage.as_view(), name='homepage_view'),
+  path('listings/', Listings.as_view(), name='listings_view'),
 
-  url(
-    regex=r'^page/(?P<slug>[-\w\d]+),[\s]?(?P<page_id>\d+)/$',
-    view=PageDetail.as_view(),
-    name='page_slug_view'
-  ),
+  path('^listings/',
+       Listings.as_view(),
+       'listings_view'
+       ),
 
-  url(
-    regex=r'^preview/page/(?P<slug>[-\w\d]+),[\s]?(?P<page_id>\d+)/$',
-    view=PageDetail.as_view(status='preview'),
-    name='page_slug_preview'
-  ),
+  path('^page/<slug:slug>,<int:page_id>/',
+       PageDetail.as_view(),
+       'page_slug_view'
+       ),
 
-  url(
-    regex=r'thanks/',
-    view=cache_page(settings.CACHE_TIMEOUT)(Thanks.as_view()),
-    name='thanks'
-  ),
+  re_path('^preview/page/(?P<slug>[-\w\d]+),[\s]?(?P<page_id>\d+)/$',
+       PageDetail.as_view(status='preview'),
+       'page_slug_preview'
+       ),
+
+  path('thanks/',
+       cache_page(settings.CACHE_TIMEOUT)(Thanks.as_view()),
+       name='thanks'
+       ),
+
+  '''
+  path('preview/video/<slug:slug>,<int:video_id>/',
+       views.VideoSlugDetail.as_view(), {'status': 'preview'},
+       name='video_preview'
+       ),
+  '''
 
 ]
-
