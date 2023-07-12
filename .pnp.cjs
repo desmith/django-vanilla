@@ -12,14 +12,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],\
     "dependencyTreeRoots": [\
       {\
-        "name": "{{project_name}}",\
+        "name": "something",\
         "reference": "workspace:."\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["{{project_name}}", ["workspace:."]]\
+      ["something", ["workspace:."]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -29,7 +29,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["after-brunch", "npm:0.0.5"],\
-            ["autoprefixer", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:10.4.14"],\
+            ["autoprefixer", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:10.4.14"],\
             ["axios", "npm:1.4.0"],\
             ["babel-brunch", "npm:7.0.1"],\
             ["babel-cli", "npm:6.26.0"],\
@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-preset-env", "npm:1.7.0"],\
             ["babel-preset-flow", "npm:6.23.0"],\
             ["babel-preset-react", "npm:6.24.1"],\
-            ["bootstrap", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:5.3.0"],\
+            ["bootstrap", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:5.3.0"],\
             ["brunch", "npm:4.0.2"],\
             ["coffee-script-brunch", "npm:4.0.0"],\
             ["coffeelint-brunch", "npm:2.10.0"],\
@@ -57,9 +57,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-brunch", "npm:3.0.0"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:18.2.0"],\
-            ["react-fontawesome", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:1.7.1"],\
-            ["react-router-dom", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:6.14.1"],\
+            ["react-dom", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:18.2.0"],\
+            ["react-fontawesome", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:1.7.1"],\
+            ["react-router-dom", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:6.14.1"],\
             ["react-router-redux", "npm:4.0.8"],\
             ["react-search-input", "npm:0.11.3"],\
             ["sass-brunch", "npm:3.0.1"],\
@@ -3171,10 +3171,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:10.4.14", {\
-          "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-59033d9929/0/cache/autoprefixer-npm-10.4.14-1e0b8c34fb-e9f18e664a.zip/node_modules/autoprefixer/",\
+        ["virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:10.4.14", {\
+          "packageLocation": "./.yarn/__virtual__/autoprefixer-virtual-2a1cf3a16d/0/cache/autoprefixer-npm-10.4.14-1e0b8c34fb-e9f18e664a.zip/node_modules/autoprefixer/",\
           "packageDependencies": [\
-            ["autoprefixer", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:10.4.14"],\
+            ["autoprefixer", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:10.4.14"],\
             ["@types/postcss", null],\
             ["browserslist", "npm:4.21.9"],\
             ["caniuse-lite", "npm:1.0.30001513"],\
@@ -4010,7 +4010,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["babel-plugin-transform-regenerator", "npm:6.26.0"],\
             ["browserslist", "npm:3.2.8"],\
             ["invariant", "npm:2.2.4"],\
-            ["semver", "npm:5.7.1"]\
+            ["semver", "npm:5.7.2"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -4205,10 +4205,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:5.3.0", {\
-          "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-6bfc5097d7/0/cache/bootstrap-npm-5.3.0-240c38a3b2-29a83cc8ca.zip/node_modules/bootstrap/",\
+        ["virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:5.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/bootstrap-virtual-95b3b9fb49/0/cache/bootstrap-npm-5.3.0-240c38a3b2-29a83cc8ca.zip/node_modules/bootstrap/",\
           "packageDependencies": [\
-            ["bootstrap", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:5.3.0"],\
+            ["bootstrap", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:5.3.0"],\
             ["@popperjs/core", null],\
             ["@types/popperjs__core", null]\
           ],\
@@ -8019,7 +8019,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["normalize-package-data", "npm:2.5.0"],\
             ["hosted-git-info", "npm:2.8.9"],\
             ["resolve", "patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"],\
-            ["semver", "npm:5.7.1"],\
+            ["semver", "npm:5.7.2"],\
             ["validate-npm-package-license", "npm:3.0.4"]\
           ],\
           "linkType": "HARD"\
@@ -8794,10 +8794,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:18.2.0", {\
-          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-2bd38e81fd/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
+        ["virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:18.2.0", {\
+          "packageLocation": "./.yarn/__virtual__/react-dom-virtual-f1d41759a8/0/cache/react-dom-npm-18.2.0-dd675bca1c-7d323310be.zip/node_modules/react-dom/",\
           "packageDependencies": [\
-            ["react-dom", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:18.2.0"],\
+            ["react-dom", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:18.2.0"],\
             ["@types/react", null],\
             ["loose-envify", "npm:1.4.0"],\
             ["react", "npm:18.2.0"],\
@@ -8818,10 +8818,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:1.7.1", {\
-          "packageLocation": "./.yarn/__virtual__/react-fontawesome-virtual-55af8f1821/0/cache/react-fontawesome-npm-1.7.1-ec66bf455d-0b4ff66aac.zip/node_modules/react-fontawesome/",\
+        ["virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:1.7.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-fontawesome-virtual-6ee6fc6d92/0/cache/react-fontawesome-npm-1.7.1-ec66bf455d-0b4ff66aac.zip/node_modules/react-fontawesome/",\
           "packageDependencies": [\
-            ["react-fontawesome", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:1.7.1"],\
+            ["react-fontawesome", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:1.7.1"],\
             ["@types/react", null],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.2.0"]\
@@ -8850,10 +8850,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:0b6e046b858e74d177967c2111ec5e91796c64e02beae5a75df71d318f388f3aaa8818e6b094d8af4d47d450d7740d55b5ddaaaccf7c52795a4cc623c43f004d#npm:6.14.1", {\
-          "packageLocation": "./.yarn/__virtual__/react-router-virtual-c65b494159/0/cache/react-router-npm-6.14.1-ad306a6b5d-16f3d108e0.zip/node_modules/react-router/",\
+        ["virtual:f083eecbd7b970963986cea0526dd00f59594783685b04bd9d031b8b6346c664353fa815953b8d93b46fcae25c9302ad5667f11a490aae76f863799191a4f67e#npm:6.14.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-router-virtual-d34f89b7a3/0/cache/react-router-npm-6.14.1-ad306a6b5d-16f3d108e0.zip/node_modules/react-router/",\
           "packageDependencies": [\
-            ["react-router", "virtual:0b6e046b858e74d177967c2111ec5e91796c64e02beae5a75df71d318f388f3aaa8818e6b094d8af4d47d450d7740d55b5ddaaaccf7c52795a4cc623c43f004d#npm:6.14.1"],\
+            ["react-router", "virtual:f083eecbd7b970963986cea0526dd00f59594783685b04bd9d031b8b6346c664353fa815953b8d93b46fcae25c9302ad5667f11a490aae76f863799191a4f67e#npm:6.14.1"],\
             ["@remix-run/router", "npm:1.7.1"],\
             ["@types/react", null],\
             ["react", "npm:18.2.0"]\
@@ -8873,16 +8873,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:6.14.1", {\
-          "packageLocation": "./.yarn/__virtual__/react-router-dom-virtual-0b6e046b85/0/cache/react-router-dom-npm-6.14.1-c73e83ca89-6ddda481ed.zip/node_modules/react-router-dom/",\
+        ["virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:6.14.1", {\
+          "packageLocation": "./.yarn/__virtual__/react-router-dom-virtual-f083eecbd7/0/cache/react-router-dom-npm-6.14.1-c73e83ca89-6ddda481ed.zip/node_modules/react-router-dom/",\
           "packageDependencies": [\
-            ["react-router-dom", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:6.14.1"],\
+            ["react-router-dom", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:6.14.1"],\
             ["@remix-run/router", "npm:1.7.1"],\
             ["@types/react", null],\
             ["@types/react-dom", null],\
             ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:18.2.0"],\
-            ["react-router", "virtual:0b6e046b858e74d177967c2111ec5e91796c64e02beae5a75df71d318f388f3aaa8818e6b094d8af4d47d450d7740d55b5ddaaaccf7c52795a4cc623c43f004d#npm:6.14.1"]\
+            ["react-dom", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:18.2.0"],\
+            ["react-router", "virtual:f083eecbd7b970963986cea0526dd00f59594783685b04bd9d031b8b6346c664353fa815953b8d93b46fcae25c9302ad5667f11a490aae76f863799191a4f67e#npm:6.14.1"]\
           ],\
           "packagePeers": [\
             "@types/react-dom",\
@@ -9420,10 +9420,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["semver", [\
-        ["npm:5.7.1", {\
-          "packageLocation": "./.yarn/cache/semver-npm-5.7.1-40bcea106b-57fd0acfd0.zip/node_modules/semver/",\
+        ["npm:5.7.2", {\
+          "packageLocation": "./.yarn/cache/semver-npm-5.7.2-938ee91eaa-fb4ab5e0dd.zip/node_modules/semver/",\
           "packageDependencies": [\
-            ["semver", "npm:5.7.1"]\
+            ["semver", "npm:5.7.2"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -9677,6 +9677,54 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["socks", "npm:2.7.1"]\
           ],\
           "linkType": "HARD"\
+        }]\
+      ]],\
+      ["something", [\
+        ["workspace:.", {\
+          "packageLocation": "./",\
+          "packageDependencies": [\
+            ["something", "workspace:."],\
+            ["after-brunch", "npm:0.0.5"],\
+            ["autoprefixer", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:10.4.14"],\
+            ["axios", "npm:1.4.0"],\
+            ["babel-brunch", "npm:7.0.1"],\
+            ["babel-cli", "npm:6.26.0"],\
+            ["babel-eslint", "npm:7.2.3"],\
+            ["babel-plugin-transform-flow-strip-types", "npm:6.22.0"],\
+            ["babel-preset-env", "npm:1.7.0"],\
+            ["babel-preset-flow", "npm:6.23.0"],\
+            ["babel-preset-react", "npm:6.24.1"],\
+            ["bootstrap", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:5.3.0"],\
+            ["brunch", "npm:4.0.2"],\
+            ["coffee-script-brunch", "npm:4.0.0"],\
+            ["coffeelint-brunch", "npm:2.10.0"],\
+            ["css-brunch", "npm:2.10.0"],\
+            ["flow-bin", "npm:0.211.1"],\
+            ["flow-brunch", "npm:0.2.4"],\
+            ["flow-typed", "npm:3.8.0"],\
+            ["javascript-brunch", "npm:2.10.0"],\
+            ["jquery", "npm:3.7.0"],\
+            ["jquery-ui", "npm:1.13.2"],\
+            ["jquery.mousewheel", "npm:3.1.9"],\
+            ["lodash", "npm:4.17.21"],\
+            ["node-sass", "npm:9.0.0"],\
+            ["popper.js", "npm:1.16.1"],\
+            ["postcss", "npm:8.4.25"],\
+            ["postcss-brunch", "npm:3.0.0"],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:18.2.0"],\
+            ["react-fontawesome", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:1.7.1"],\
+            ["react-router-dom", "virtual:41da6f1e0d1e8635c9fb99f446e949c7c121aa0c24b4b53948e1917e3ad6712f868ea54277f4d37d912f143b7ff12bd6601f148cf7eabda83515085aa6fde5be#npm:6.14.1"],\
+            ["react-router-redux", "npm:4.0.8"],\
+            ["react-search-input", "npm:0.11.3"],\
+            ["sass-brunch", "npm:3.0.1"],\
+            ["stylus-brunch", "npm:3.0.0"],\
+            ["tether", "npm:2.0.0"],\
+            ["uglify-js-brunch", "npm:2.10.0"],\
+            ["what-input", "npm:5.2.12"]\
+          ],\
+          "linkType": "SOFT"\
         }]\
       ]],\
       ["source-map", [\
@@ -10765,54 +10813,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["yargs-parser", "npm:21.1.1"]\
           ],\
           "linkType": "HARD"\
-        }]\
-      ]],\
-      ["{{project_name}}", [\
-        ["workspace:.", {\
-          "packageLocation": "./",\
-          "packageDependencies": [\
-            ["{{project_name}}", "workspace:."],\
-            ["after-brunch", "npm:0.0.5"],\
-            ["autoprefixer", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:10.4.14"],\
-            ["axios", "npm:1.4.0"],\
-            ["babel-brunch", "npm:7.0.1"],\
-            ["babel-cli", "npm:6.26.0"],\
-            ["babel-eslint", "npm:7.2.3"],\
-            ["babel-plugin-transform-flow-strip-types", "npm:6.22.0"],\
-            ["babel-preset-env", "npm:1.7.0"],\
-            ["babel-preset-flow", "npm:6.23.0"],\
-            ["babel-preset-react", "npm:6.24.1"],\
-            ["bootstrap", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:5.3.0"],\
-            ["brunch", "npm:4.0.2"],\
-            ["coffee-script-brunch", "npm:4.0.0"],\
-            ["coffeelint-brunch", "npm:2.10.0"],\
-            ["css-brunch", "npm:2.10.0"],\
-            ["flow-bin", "npm:0.211.1"],\
-            ["flow-brunch", "npm:0.2.4"],\
-            ["flow-typed", "npm:3.8.0"],\
-            ["javascript-brunch", "npm:2.10.0"],\
-            ["jquery", "npm:3.7.0"],\
-            ["jquery-ui", "npm:1.13.2"],\
-            ["jquery.mousewheel", "npm:3.1.9"],\
-            ["lodash", "npm:4.17.21"],\
-            ["node-sass", "npm:9.0.0"],\
-            ["popper.js", "npm:1.16.1"],\
-            ["postcss", "npm:8.4.25"],\
-            ["postcss-brunch", "npm:3.0.0"],\
-            ["prop-types", "npm:15.8.1"],\
-            ["react", "npm:18.2.0"],\
-            ["react-dom", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:18.2.0"],\
-            ["react-fontawesome", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:1.7.1"],\
-            ["react-router-dom", "virtual:4aab74ae188449caeca28a85bf6abed92c8ac8ed98aa088467aa16adaad91394ce599b1eb85e583b2f627ffdd3384bbb720135ceff59a7c14db3b3a070f420e6#npm:6.14.1"],\
-            ["react-router-redux", "npm:4.0.8"],\
-            ["react-search-input", "npm:0.11.3"],\
-            ["sass-brunch", "npm:3.0.1"],\
-            ["stylus-brunch", "npm:3.0.0"],\
-            ["tether", "npm:2.0.0"],\
-            ["uglify-js-brunch", "npm:2.10.0"],\
-            ["what-input", "npm:5.2.12"]\
-          ],\
-          "linkType": "SOFT"\
         }]\
       ]]\
     ]\
