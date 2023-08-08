@@ -1592,10 +1592,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@remix-run/router@npm:1.7.1":
-  version: 1.7.1
-  resolution: "@remix-run/router@npm:1.7.1"
-  checksum: d13ad7e0b3b35379f8fdec1eec4f515325b618e431915e12fb9f1cd812ee959add0e7045edcb229ba17888ecfc787869b64e6cb4153ae3be148887e234b6ffac
+"@remix-run/router@npm:1.7.2":
+  version: 1.7.2
+  resolution: "@remix-run/router@npm:1.7.2"
+  checksum: ea43bb662f1f5c93965989b1667fb6e8a301cb69c44341ee92c81cb15ea685b494168e5905593b5777d59058f1455b4b58083d5b895f04382e49362e420d7af4
   languageName: node
   linkType: hard
 
@@ -2923,12 +2923,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bootstrap@npm:^5.3.0":
-  version: 5.3.0
-  resolution: "bootstrap@npm:5.3.0"
+"bootstrap@npm:^5.3.1":
+  version: 5.3.1
+  resolution: "bootstrap@npm:5.3.1"
   peerDependencies:
-    "@popperjs/core": ^2.11.7
-  checksum: 29a83cc8cac96d70051e265a5da342cc488df8fc76dff6746ef7d155698286cd5bdfa3e52c6ebf09f8e5a97f25929ee97aee36237117732e52b0d3276a72c45c
+    "@popperjs/core": ^2.11.8
+  checksum: f8176376aa6c6d8947d58a67f0c57fa0b6b7dcd087ff83454e0d727c07cf33e8107e56aa298045d652f84b53b24ac72457af73e41c5631c9ebdc1909039c5dac
   languageName: node
   linkType: hard
 
@@ -4273,12 +4273,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-bin@npm:>=0.35.0 <1.0.0, flow-bin@npm:^0.211.1":
+"flow-bin@npm:>=0.35.0 <1.0.0":
   version: 0.211.1
   resolution: "flow-bin@npm:0.211.1"
   bin:
     flow: cli.js
   checksum: 435e6fc62aae024da7719238105e052693c95c69b9d14c1e8f56caea1e816920dd2db860ffb9bfeff13c1adcf30d86bbc13046e66ffcb6208df80e0ee72d60aa
+  languageName: node
+  linkType: hard
+
+"flow-bin@npm:^0.214.0":
+  version: 0.214.0
+  resolution: "flow-bin@npm:0.214.0"
+  bin:
+    flow: cli.js
+  checksum: fa868c9e7343dd6adbfa5a4bf41d6934b5a37ac981b35aad20012cae177f5e09c8af466eea58f49cfb288005fd3faef9023bbb75b0388db92572d836345ccc79
   languageName: node
   linkType: hard
 
@@ -4292,9 +4301,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"flow-typed@npm:^3.8.0":
-  version: 3.8.0
-  resolution: "flow-typed@npm:3.8.0"
+"flow-typed@npm:^3.9.0":
+  version: 3.9.0
+  resolution: "flow-typed@npm:3.9.0"
   dependencies:
     "@octokit/rest": ^18.12.0
     colors: 1.4.0
@@ -4307,13 +4316,13 @@ __metadata:
     node-stream-zip: ^1.15.0
     prettier: ^1.19.1
     rimraf: ^3.0.2
-    semver: 7.3.2
+    semver: ^7.5.4
     table: ^6.7.3
     which: ^2.0.2
     yargs: ^15.1.0
   bin:
     flow-typed: dist/cli.js
-  checksum: f3b93888434b5b55613fcf13ede49c62c5541d70fdb06343ffe2f438b14e8aa34b5778df266679cf842efa1be8ebc75ca75f63a559e6cc7bc25eb5a337763b90
+  checksum: ec410b9dc1f979c3feee92258f9d5fc6087529991e4be0f4f8dd8e2af95d2903927f4bd37e032f9c50f3f21224bff08f8fb73dc5d3b7fd9ec4fcf43b75d42e08
   languageName: node
   linkType: hard
 
@@ -6937,7 +6946,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.2.7, postcss@npm:^8.4.25":
+"postcss@npm:^8.2.7":
   version: 8.4.25
   resolution: "postcss@npm:8.4.25"
   dependencies:
@@ -6945,6 +6954,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 9ed3ab8af43ad5210c28f56f916fd9b8c9f94fbeaebbf645dcf579bc28bdd8056c2a7ecc934668d399b81fedb6128f0c4b299f931e50454964bc911c25a3a0a2
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.27":
+  version: 8.4.27
+  resolution: "postcss@npm:8.4.27"
+  dependencies:
+    nanoid: ^3.3.6
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 1cdd0c298849df6cd65f7e646a3ba36870a37b65f55fd59d1a165539c263e9b4872a402bf4ed1ca1bc31f58b68b2835545e33ea1a23b161a1f8aa6d5ded81e78
   languageName: node
   linkType: hard
 
@@ -7131,16 +7151,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^6.14.1":
-  version: 6.14.1
-  resolution: "react-router-dom@npm:6.14.1"
+"react-router-dom@npm:^6.14.2":
+  version: 6.14.2
+  resolution: "react-router-dom@npm:6.14.2"
   dependencies:
-    "@remix-run/router": 1.7.1
-    react-router: 6.14.1
+    "@remix-run/router": 1.7.2
+    react-router: 6.14.2
   peerDependencies:
     react: ">=16.8"
     react-dom: ">=16.8"
-  checksum: 6ddda481edb2c614671bcaf24b0ca07ca00215f1d0350ede43a03ba24c3401a537dfe4a9f5e108a512c2703e4a8ce99a3301c15caf16012b67b248b1a055d69a
+  checksum: a53dbc566ecab7890b829d42d38553684f704803c1f615db1bd6aa2d71542c369a1a79e4385be31ae71a14b72ddbcd0d8b51188248c2bccd44e015050d1927df
   languageName: node
   linkType: hard
 
@@ -7151,14 +7171,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router@npm:6.14.1":
-  version: 6.14.1
-  resolution: "react-router@npm:6.14.1"
+"react-router@npm:6.14.2":
+  version: 6.14.2
+  resolution: "react-router@npm:6.14.2"
   dependencies:
-    "@remix-run/router": 1.7.1
+    "@remix-run/router": 1.7.2
   peerDependencies:
     react: ">=16.8"
-  checksum: 16f3d108e0f833bfee447192e3f40bd6731b8b11d42ca6925443ec8aeb157a889fe8ece67baf690f75f0d146d0a212656f9216fcc2df6fd3a2bd263108ed0abb
+  checksum: 7507bf5732b3a8ddbd901c2061216eebca73e194449bff58acc1445171e22bdda36b455b8af066e467748ebfb5875b3c0a565941c46af65c6f653a6ed0dc4fe4
   languageName: node
   linkType: hard
 
@@ -7684,15 +7704,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:7.3.2":
-  version: 7.3.2
-  resolution: "semver@npm:7.3.2"
-  bin:
-    semver: bin/semver.js
-  checksum: 692f4900dadb43919614b0df9af23fe05743051cda0d1735b5e4d76f93c9e43a266fae73cfc928f5d1489f022c5c0e65dfd2900fcf5b1839c4e9a239729afa7b
-  languageName: node
-  linkType: hard
-
 "semver@npm:^6.3.0":
   version: 6.3.0
   resolution: "semver@npm:6.3.0"
@@ -7702,7 +7713,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.3.4, semver@npm:^7.3.5":
+"semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
@@ -8944,14 +8955,14 @@ __metadata:
     babel-preset-env: ^1.7.0
     babel-preset-flow: ^6.23.0
     babel-preset-react: ^6.24.1
-    bootstrap: ^5.3.0
+    bootstrap: ^5.3.1
     brunch: ^4.0.2
     coffee-script-brunch: ^4.0.0
     coffeelint-brunch: ^2.10.0
     css-brunch: ^2.10.0
-    flow-bin: ^0.211.1
+    flow-bin: ^0.214.0
     flow-brunch: ^0.2.4
-    flow-typed: ^3.8.0
+    flow-typed: ^3.9.0
     javascript-brunch: ^2.10.0
     jquery: ^3.7.0
     jquery-ui: ^1.13.2
@@ -8959,13 +8970,13 @@ __metadata:
     lodash: ^4.17.21
     node-sass: ^9.0.0
     popper.js: ^1.12.5
-    postcss: ^8.4.25
+    postcss: ^8.4.27
     postcss-brunch: ^3.0.0
     prop-types: ^15.8.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-fontawesome: ^1.7.1
-    react-router-dom: ^6.14.1
+    react-router-dom: ^6.14.2
     react-router-redux: ^4.0.8
     react-search-input: ^0.11.3
     sass-brunch: ^3.0.1
