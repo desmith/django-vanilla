@@ -1990,14 +1990,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:>=1.4.0":
-  version: 1.4.0
-  resolution: "axios@npm:1.4.0"
+"axios@npm:>=1.6.0":
+  version: 1.6.1
+  resolution: "axios@npm:1.6.1"
   dependencies:
     follow-redirects: ^1.15.0
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: 7fb6a4313bae7f45e89d62c70a800913c303df653f19eafec88e56cea2e3821066b8409bc68be1930ecca80e861c52aa787659df0ffec6ad4d451c7816b9386b
+  checksum: 573f03f59b7487d54551b16f5e155d1d130ad4864ed32d1da93d522b78a57123b34e3bde37f822a65ee297e79f1db840f9ad6514addff50d3cbf5caeed39e8dc
   languageName: node
   linkType: hard
 
@@ -7868,6 +7868,52 @@ __metadata:
   languageName: node
   linkType: hard
 
+"something@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "something@workspace:."
+  dependencies:
+    after-brunch: 0.0.5
+    autoprefixer: ^10.4.14
+    axios: ">=1.6.0"
+    babel-brunch: ^7.0.1
+    babel-cli: ^6.26.0
+    babel-eslint: ^7.1.1
+    babel-plugin-transform-flow-strip-types: ^6.22.0
+    babel-preset-env: ^1.7.0
+    babel-preset-flow: ^6.23.0
+    babel-preset-react: ^6.24.1
+    bootstrap: ^5.3.1
+    brunch: ^4.0.2
+    coffee-script-brunch: ^4.0.0
+    coffeelint-brunch: ^2.10.0
+    css-brunch: ^2.10.0
+    flow-bin: ^0.214.0
+    flow-brunch: ^0.2.4
+    flow-typed: ^3.9.0
+    javascript-brunch: ^2.10.0
+    jquery: ^3.7.0
+    jquery-ui: ^1.13.2
+    jquery.mousewheel: ^3.1.9
+    lodash: ^4.17.21
+    node-sass: ^9.0.0
+    popper.js: ^1.12.5
+    postcss: ^8.4.27
+    postcss-brunch: ^3.0.0
+    prop-types: ^15.8.1
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-fontawesome: ^1.7.1
+    react-router-dom: ^6.14.2
+    react-router-redux: ^4.0.8
+    react-search-input: ^0.11.3
+    sass-brunch: ^3.0.1
+    stylus-brunch: ^3.0.0
+    tether: ^2.0.0
+    uglify-js-brunch: ^2.10.0
+    what-input: ^5.2.12
+  languageName: unknown
+  linkType: soft
+
 "source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
@@ -8876,49 +8922,3 @@ __metadata:
   checksum: 73fd1978a311c853ae4c2c2da12642878912a33e4a8e9e8fec00900dc3b5db31a334c337cff04a542ebba7a32f64a9330419ba45249002f45f349a5d41010cab
   languageName: node
   linkType: hard
-
-"{{project_name}}@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "{{project_name}}@workspace:."
-  dependencies:
-    after-brunch: 0.0.5
-    autoprefixer: ^10.4.14
-    axios: ">=1.4.0"
-    babel-brunch: ^7.0.1
-    babel-cli: ^6.26.0
-    babel-eslint: ^7.1.1
-    babel-plugin-transform-flow-strip-types: ^6.22.0
-    babel-preset-env: ^1.7.0
-    babel-preset-flow: ^6.23.0
-    babel-preset-react: ^6.24.1
-    bootstrap: ^5.3.1
-    brunch: ^4.0.2
-    coffee-script-brunch: ^4.0.0
-    coffeelint-brunch: ^2.10.0
-    css-brunch: ^2.10.0
-    flow-bin: ^0.214.0
-    flow-brunch: ^0.2.4
-    flow-typed: ^3.9.0
-    javascript-brunch: ^2.10.0
-    jquery: ^3.7.0
-    jquery-ui: ^1.13.2
-    jquery.mousewheel: ^3.1.9
-    lodash: ^4.17.21
-    node-sass: ^9.0.0
-    popper.js: ^1.12.5
-    postcss: ^8.4.27
-    postcss-brunch: ^3.0.0
-    prop-types: ^15.8.1
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-fontawesome: ^1.7.1
-    react-router-dom: ^6.14.2
-    react-router-redux: ^4.0.8
-    react-search-input: ^0.11.3
-    sass-brunch: ^3.0.1
-    stylus-brunch: ^3.0.0
-    tether: ^2.0.0
-    uglify-js-brunch: ^2.10.0
-    what-input: ^5.2.12
-  languageName: unknown
-  linkType: soft
